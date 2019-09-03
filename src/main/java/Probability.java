@@ -1,11 +1,15 @@
 public class Probability {
-   private float coinToss;
+   private final float coinToss;
     public Probability(float coinToss)
     {
     this.coinToss=coinToss;
     }
-    public float probabilityOfEventNotOccurring()
+    float probabilityOfEventNotOccurring()
     {
        return 1-coinToss;
+    }
+    float probabilityOfEventOccurringTogether()
+    {
+        return coinToss*coinToss;
     }
 }
